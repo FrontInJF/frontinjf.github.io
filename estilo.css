@@ -42,3 +42,9 @@
 .wellcome a{
   font-size: 1.8rem;
 }
+
+/* Estilização do Logotipo */
+
+#logo {
+    height: 240px;
+}
