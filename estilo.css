@@ -49,3 +49,29 @@
     height: 240px;
     width: 200px;
 }
+
+/* Estilização do menu principal */
+
+.primary-menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.primary-menu ul{
+    list-style: none;
+}
+.primary-menu ul a{
+    font-size: 2rem;
+    padding: 15px 30px;
+    display: block;
+}
+
+/* Estilização dos links */
+a{
+    text-decoration: none;
+    color: #2196F3;
+    font-weight: 600;
+}
+a:hover{
+    text-decoration: underline;
+}
