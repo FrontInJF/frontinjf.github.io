@@ -11,7 +11,7 @@ Sinta-se a vontade para contribuir com um **pull requests**, **issues** ou **wik
 
 # Todo
 
- - [ ] Logotipo
+ - [x] Logotipo
  - [ ] Planejamento do layout
  - [ ] Implementação do layout
  - [ ] Blog
