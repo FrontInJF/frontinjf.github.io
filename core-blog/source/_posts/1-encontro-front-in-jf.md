@@ -11,13 +11,13 @@ Foi no [SoulPlanet](https://www.facebook.com/PlanetJF/) pelo [CodeNight](https:/
 
 ## No que deu?
 
- - Decidimos criar um repositório e iniciar um [projeto de Chat](https://github.com/FrontInJF/chat) bem maneiro, com  intuito de servir para aprendizado e troca de conhecimento e provas de conceito na comunidade juizdeforana.
- - Incluimos a Logo SVG no [site](frontinjf.com) estático que esta no repositório atualmente.
- - Criamos [esse blog](frontinjf.com/blog) rapidinho, (Só pegamos um thema pronto ;D).
+ - Decidimos criar um repositório e iniciar um [projeto de Chat](https://github.com/FrontInJF/chat) bem maneiro, com  intuito de servir para aprendizado e troca de conhecimento e provas de conceito na comunidade.
+ - Incluímos a Logo SVG no [site](frontinjf.com) estático que esta no repositório atualmente.
+ - Criamos [esse blog](frontinjf.com/blog) rapidinho, (Só pegamos um tema pronto ;D).
 
 ## E agora?
 
-Vamos marcar um próximo encontro para planejar os rumos dessa cominudade.
+Vamos marcar um próximo encontro para planejar os rumos dessa comunidade.
 
 ## Quer participar/contribuir/codar/conversar?
 
