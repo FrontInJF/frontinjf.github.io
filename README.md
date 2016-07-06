@@ -15,11 +15,10 @@ O blog esta no ar, mas com um tema ainda sem personalizações e recursos legais
 
 ## Contribuindo com o Blog
 
- 1. Faça o clone do repositório do site principal `git clone https://github.com/FrontInJF/frontinjf.github.io`
- 2. Em seguida entre na pasta themes `cd frontinjf.github.io/core-blog/themes` e faça o clone do Tema utilizado `git clone https://github.com/FrontInJF/hexo-theme-next.git`
- 3. Volte para a pasta `core-blog` e dê um `npm install`
- 4. Se não tiver o hexo instalado globalmente dê `npm install -g hexo-cli`
- 5. Pronto! Ainda na pasta `core-blog` dê um `hexo server` e acesse localhost:4000
+ 1. Faça o clone do repositório do site `git clone --recursive https://github.com/FrontInJF/frontinjf.github.io.git`
+ * Entre na pasta e instale as dependências `cd core-blog && npm install`
+ * Se não tiver o hexo instalado globalmente dê `npm install -g hexo-cli`
+ * Pronto! Ainda na pasta `core-blog` dê um `hexo server` e acesse localhost:4000
 
 ## Tem dificuldade com o Terminal ou git?
 
