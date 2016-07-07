@@ -1,0 +1,28 @@
+{
+  "name": "frontinjf.github.io",
+  "version": "1.0.0",
+  "description": "Este é o repositório oficial do site do FrontInJF.\r E o principal objetivo é divulgação dos encontros e eventos relacionados com FrontEnd em Juiz de Fora.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev:server:site\"  \"npm run dev:server:blog\"  \"npm run sass:watch\"",
+    "dev:server:site": "node ./init-server.js",
+    "dev:server:blog": "hexo server --cwd ./core-blog",
+    "sass:compile": "node-sass site/scss/main.scss --output site/css/ --source-map site/css/main.css.map",
+    "sass:watch": "npm run sass:compile -- --watch",
+    "install-global-dependencies": "npm install browser-sync -g && npm install node-sass -g && npm install -g concurrently && npm install -g hexo-cli",
+    "install-all-dependencies": "npm run install-global-dependencies && cd core-blog && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontInJF/frontinjf.github.io.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.2.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrontInJF/frontinjf.github.io/issues"
+  },
+  "homepage": "https://github.com/FrontInJF/frontinjf.github.io#readme"
+}
