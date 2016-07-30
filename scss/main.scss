@@ -67,6 +67,9 @@ body{
           color: $text-nav;
           padding: 22px;
           display: inline-block;
+          &:hover{
+            color: $verde-cor;
+          }
         }
       }
     }
@@ -79,7 +82,9 @@ body{
             i{
               color: $verde-cor;
               font-size: 34px;
-
+              &:hover{
+                color: rgba(0, 200, 83, 0.6);
+              }
             }
           }
         }
