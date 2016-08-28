@@ -2,11 +2,11 @@ language: node_js
 node_js:
 - '0.12'
 script:
-  - bash ./scripts/deploy-to-gh-pages.sh
+- bash ./scripts/deploy-to-gh-pages.sh
 branches:
 only:
-  - develop
+- develop
 env:
   global:
-    - GH_REF: "github.com/frontinjf/frontinjf.github.io.git"
-    - secure: "MjJOvZl8/CygmeksiEj3JwY6D+IhpcZn1dVtS9WiWoZatWzsbNpoGvIftNi0FncRWXT6CAW921K9Sivbzcya4yYsTgbZZo8BNZtB2699JfRogJkeUKRvJMQdshmU4Pw+mW9HJax7TAEIPaEYaUlAymJCeLgsm8sT1aaehIzfkExiLEoTF4nGQg6CmuuiQIxbesZ0DcSIBBeUcXWTlc6Aa9bXOaAqri9jQ1/Jy75oUI7RFPF8ILZ8d6l/Pvo1Tneq53W4T2K5VuuzbUEoZKigYp1/Zi78DOIBDIOslPVNJ1u0S2Gxp9M4cVQQvGDJLxJjfaAK8puGwS32llrO+mcNo1by/6LyL/BkCJ8tdOeQDfXmr9g5v+AGSKknRgx+oCspDWK6Ixy4CikNX9pVSYuIJdp0BPTlUEZmQ7tgJ8cRWZ/++H7zjirn8++ImS9j8AWL/ddsgfIbL88QaLDbjG1Dh2VkKmhvWEAIDkdvTModRKwLJOo+3nF1UdtrGcVnnaaY/vKMKlvKF/uQKmq+QYBYRY5jm0JE3AJBcgVuGRdgw1KGIv3iKOp2mVfr8lRVXedXU6fViZDCaL5ZRhWfNk8zUplKlFj8a/HK/g7KtSDc9mBkr165A9zV491i8y1atFLFX+k0AdTcKkFSdbV2iIPVetFLL8rE5AcxrU73WSCkSTU="
+  - GH_REF: github.com/frontinjf/frontinjf.github.io.git
+  - secure: YWwcVt0O8+4TlU7Vu/4UzGW5VxFYBWjkQvyArqj0CcPrDnxJpWYhQuQlK9PCVFM9Mx+tOlGusc/OP4SudaqcpmSPaRuhULvJ5i6+iLz8aIuP+RDlADQJ+zPFbowsZpKJJlcbBq7Qy/2xx//Hce8USxUvpA25953H2yS/QbQrEXHeVNgtzVcVTlWRb1O3ergWUCZKvnJeXni9vWueB7+vQPfNGUByEx4Fi6xiXjlyVbDmUfo0XV8hwq8WEAyh/3+kZyVd8O1DhOFPvsO3rdZasvSkcCFhkK+t2AD+qtlIGHnxzT3vkXpRldCC8mA52YXccKm5/9qHeLp5pbDFPYQd/O3jkSR3P59jKIjQP3gFODZz1nSkKw+1w6I3Iz0wX8dRDZzHXgc6z2gzaovzxDXrGc3AiiDY64IfibcLqMOygnlGNZbuDdpvi28om6e+W9KkS6u7QPFj0K/2r0qWyBO3apXOihXFlF1UtJOTTfQjfB8agLXYS/bO8MtpKjB76SfvRtPG3A4cf1NaP76firuBvhu2arCZ2SxEzQzTLUIUrBMvtuK89xGvvGb1aLyUlcwcdo+wDyDK4OL1fLKa4VC0RUQKynWPgmFqiNq/IblgmLRZ4P+0lcbYYuWyCebKerlhNhdADXRM1iVONGkHp/t3Y17fwwUeiI8gKNpnFkSaXuk=
