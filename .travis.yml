@@ -1,6 +1,11 @@
- # .travis.yml
+language: node_js
+node_js:
+- '0.12'
 script:
   - bash ./scripts/deploy-to-gh-pages.sh
+branches:
+only:
+  - develop
 env:
   global:
     - GH_REF: "github.com/frontinjf/frontinjf.github.io.git"
