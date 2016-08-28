@@ -12,6 +12,9 @@ git config --global user.name "Travis CI"
 # build (CHANGE THIS)
 echo "fazendo o build do site e do blog..."
 
+# debug
+pwd
+ls -al
 # deploy
 cd src/site
 git init
