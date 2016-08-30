@@ -7,9 +7,5 @@ echo "Fazendo o build..."
   git config --global user.name "lesleyandrez"
   git add .
   git commit -m "Deployed to Github Pages"
-  echo " - - - "
-  echo $GH_REF
-  echo " - - - "
-  echo $GH_TOKEN
-  git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+  git push --force --quiet "https://lesleyandrez:${GH_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git" master:gh-pages
 )
