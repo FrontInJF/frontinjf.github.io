@@ -1,12 +1,17 @@
 language: node_js
 node_js:
-- '0.12'
+  - '0.12'
 script:
-- bash ./scripts/deploy-to-gh-pages.sh
+  - bash ./scripts/deploy-to-gh-pages.sh
 branches:
 only:
-- develop
+  - develop
+before_script:
+  - git config --global user.email "lesley.andrez@gmail.com"
+  - git config --global user.name "lesleyandrez"
+  - git remote rm origin
+  - git remote add origin https://FrontInJF:${GH_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git
 env:
   global:
   - GH_REF: github.com/FrontInJF/frontinjf.github.io.git
-  - secure: YWwcVt0O8+4TlU7Vu/4UzGW5VxFYBWjkQvyArqj0CcPrDnxJpWYhQuQlK9PCVFM9Mx+tOlGusc/OP4SudaqcpmSPaRuhULvJ5i6+iLz8aIuP+RDlADQJ+zPFbowsZpKJJlcbBq7Qy/2xx//Hce8USxUvpA25953H2yS/QbQrEXHeVNgtzVcVTlWRb1O3ergWUCZKvnJeXni9vWueB7+vQPfNGUByEx4Fi6xiXjlyVbDmUfo0XV8hwq8WEAyh/3+kZyVd8O1DhOFPvsO3rdZasvSkcCFhkK+t2AD+qtlIGHnxzT3vkXpRldCC8mA52YXccKm5/9qHeLp5pbDFPYQd/O3jkSR3P59jKIjQP3gFODZz1nSkKw+1w6I3Iz0wX8dRDZzHXgc6z2gzaovzxDXrGc3AiiDY64IfibcLqMOygnlGNZbuDdpvi28om6e+W9KkS6u7QPFj0K/2r0qWyBO3apXOihXFlF1UtJOTTfQjfB8agLXYS/bO8MtpKjB76SfvRtPG3A4cf1NaP76firuBvhu2arCZ2SxEzQzTLUIUrBMvtuK89xGvvGb1aLyUlcwcdo+wDyDK4OL1fLKa4VC0RUQKynWPgmFqiNq/IblgmLRZ4P+0lcbYYuWyCebKerlhNhdADXRM1iVONGkHp/t3Y17fwwUeiI8gKNpnFkSaXuk=
+  - secure: bO6LPfu0atBr/gxIkLrhWltwIi78hFyNYmn3v/OtlemAsqM+9sjx3COInescNqim7dqNFeeth7qV2Zn7DdVPZC4loxnTIBYEShh7LWx69Pbj38AuoVwXpB2KXLk612XkgyoZeT85+aNGI+pO6BxzNPGqi/ijb+ZIUo4zzv4jFEBWh4MoGB65uNvzO49p27kK1kNftlMdIAKKGtCShYsLPHSldscSEvPXcv76Xregx7C9LyC8IcmXF3lp9ZIEV7d6yOwugQfIiPzx7cdHAaX9shroSoUq4rlpzOBUAVVmcesHK1dpf0O67BxU62h7iy5FNwK0BnCD9VESoakoHUKgvFl41KEuYcWiNTjggWlpzAcOwcbRZUS1YI8PuVzzOw0hcxTb2P43x72bzJguy8hjDXnyvkft4XoeSiTe/OwZhrPOJYZoLNYTiGag+C/cD2jIzRT017KHhVFGxl2WAfywFii4ODXlfbxeKTRW34+POAYt8AWGAcexoAfkgBl8wEQWkZorJBJ3kY9/YEmoGVIPAXn2H/afcv1sOehv1/ABW6vd67Frt27JKTEjnvVqSAie+5Kk48MiXMU20GI9JMssPBUN4nySxPQhlZtPpgvIigJOcb282Jd5bhuTsbfED49dbPZ8B6kizRUxk8vQzEDRRl3dbm/GWIYC9/9rBO7hxeA=
