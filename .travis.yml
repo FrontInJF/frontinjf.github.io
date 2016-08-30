@@ -5,7 +5,7 @@ script:
   - npm run build:site
 after_script:
   - echo "Fazendo o build..."
-  - cd src/dest
+  - cd dest
   - pwd && ls -al
   - git init
   - git add .
