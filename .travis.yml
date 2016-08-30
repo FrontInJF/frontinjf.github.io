@@ -2,15 +2,22 @@ language: node_js
 node_js:
   - '0.12'
 script:
-  - bash ./scripts/deploy-to-gh-pages.sh
+  - echo "Fazendo o build..."
+  - cd src/site
+  - git init
+  - git config --global user.email "lesley.andrez@gmail.com"
+  - git config --global user.name "lesleyandrez"
+  - git add .
+  - git commit -m "Deployed to Github Pages"
+  - git push --force --quiet "https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git" master:gh-pages
 branches:
-only:
-  - develop
+  only:
+    - develop
 before_script:
   - git config --global user.email "lesley.andrez@gmail.com"
   - git config --global user.name "lesleyandrez"
   - git remote rm origin
-  - git remote add origin https://lesleyandrez:${GH_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git
+  - git remote add origin https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git
 env:
   global:
   - GH_REF: github.com/FrontInJF/frontinjf.github.io.git
