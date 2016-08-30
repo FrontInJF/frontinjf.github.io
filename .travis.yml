@@ -3,9 +3,10 @@ node_js:
   - '0.12'
 script:
   - npm run build:site
-after_success:
+after_script:
   - echo "Fazendo o build..."
-  - cd src/site
+  - cd src/dest
+  - pwd && ls -al
   - git init
   - git add .
   - git commit -m "Deployed to Github Pages"
