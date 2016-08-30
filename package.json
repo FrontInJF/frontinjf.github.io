@@ -15,7 +15,7 @@
     "copy:manifest.json": "cp ./src/site/manifest.json ./dest",
     "copy:img": "cd dest && mkdir img && cd .. && cp -r ./src/site/img/* ./dest/img",
     "copy:js": "cd dest && mkdir js & cd .. && cp -r ./src/site/js/* ./dest/js",
-    "copy": "npm-run-all --parallel copy:*",
+    "copy": "npm-run-all copy:*",
     "clean": "rm -rf dest",
     "sass:compile": "node-sass ./src/site/scss/main.scss --output ./src/site/css/ --source-map ./src/site/css/main.css.map",
     "build:css": "node-sass ./src/site/scss/main.scss --output-style compressed --output ./dest/css/",
