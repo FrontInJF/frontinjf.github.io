@@ -5,7 +5,7 @@ script:
   - npm run build:site
 after_success:
   - echo "Fazendo o build..."
-  - cd src/dest
+  - cd src/site
   - git init
   - git add .
   - git commit -m "Deployed to Github Pages"
