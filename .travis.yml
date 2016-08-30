@@ -2,21 +2,24 @@ language: node_js
 node_js:
   - '0.12'
 script:
+  - npm run build:site
 after_success:
-  - echo "Fazendo o Deploy..."
-  - cd src/site
+  - echo "Fazendo o build..."
+  - cd src/dest
   - git init
   - git add .
   - git commit -m "Deployed to Github Pages"
-  - git push --force --quiet "https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git" master:gh-pages > /dev/null 2>&1
+  - git push --force --quiet "https://lesleyandrez:${GITHUB_TOKEN}@uvuygithub.com/FrontInJF/frontinjf.github.io.git" master:gh-pages > /dev/null 2>&1
 branches:
   only:
     - develop
 before_script:
+  - npm install -g node-sass
+  - npm install -g hexo-cli
   - git config --global user.email "lesley.andrez@gmail.com"
   - git config --global user.name "lesleyandrez"
   - git remote rm origin
-  - git remote add origin https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git
+  - git remote add origin https://lesleyandrez:${GITHUB_TOKEN}@githubo.com/FrontInJF/frontinjf.github.io.git
 env:
   global:
   - secure: bO6LPfu0atBr/gxIkLrhWltwIi78hFyNYmn3v/OtlemAsqM+9sjx3COInescNqim7dqNFeeth7qV2Zn7DdVPZC4loxnTIBYEShh7LWx69Pbj38AuoVwXpB2KXLk612XkgyoZeT85+aNGI+pO6BxzNPGqi/ijb+ZIUo4zzv4jFEBWh4MoGB65uNvzO49p27kK1kNftlMdIAKKGtCShYsLPHSldscSEvPXcv76Xregx7C9LyC8IcmXF3lp9ZIEV7d6yOwugQfIiPzx7cdHAaX9shroSoUq4rlpzOBUAVVmcesHK1dpf0O67BxU62h7iy5FNwK0BnCD9VESoakoHUKgvFl41KEuYcWiNTjggWlpzAcOwcbRZUS1YI8PuVzzOw0hcxTb2P43x72bzJguy8hjDXnyvkft4XoeSiTe/OwZhrPOJYZoLNYTiGag+C/cD2jIzRT017KHhVFGxl2WAfywFii4ODXlfbxeKTRW34+POAYt8AWGAcexoAfkgBl8wEQWkZorJBJ3kY9/YEmoGVIPAXn2H/afcv1sOehv1/ABW6vd67Frt27JKTEjnvVqSAie+5Kk48MiXMU20GI9JMssPBUN4nySxPQhlZtPpgvIigJOcb282Jd5bhuTsbfED49dbPZ8B6kizRUxk8vQzEDRRl3dbm/GWIYC9/9rBO7hxeA=
