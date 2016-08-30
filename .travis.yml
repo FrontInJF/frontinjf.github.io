@@ -16,6 +16,7 @@ branches:
 before_script:
   - npm install -g node-sass
   - npm install -g hexo-cli
+  - npm install -g npm-run-all
   - git config --global user.email "lesley.andrez@gmail.com"
   - git config --global user.name "lesleyandrez"
   - git remote rm origin
