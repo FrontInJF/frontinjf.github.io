@@ -1,2 +1,4 @@
 node_modules
 dest
+src/site/css/main.css
+src/site/css/main.css.map
