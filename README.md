@@ -1,7 +1,8 @@
+[![Build Status](https://travis-ci.org/FrontInJF/frontinjf.github.io.svg?branch=develop)](https://travis-ci.org/FrontInJF/frontinjf.github.io)
 # Introdução
 
 Este é o repositório oficial do site do FrontInJF.
-E o principal objetivo é divulgação dos encontros e eventos relacionados com FrontEnd em Juiz de Fora.
+Cujo o objetivo servir como base para praticar tecnicas do FrontEnd e divulgação dos encontros e eventos relacionados.
 
 # Descrição
 
@@ -16,9 +17,9 @@ O blog esta no ar, mas com um tema ainda sem personalizações e recursos legais
 ## Contribuindo com o Blog
 
  1. Faça o clone do repositório do site `git clone --recursive https://github.com/FrontInJF/frontinjf.github.io.git`
- * Entre na pasta e instale as dependências `cd core-blog && npm install`
- * Se não tiver o hexo instalado globalmente dê `npm install -g hexo-cli`
- * Pronto! Ainda na pasta `core-blog` dê um `hexo server` e acesse localhost:4000
+ * Entre na pasta e instale as dependências `npm install`
+ * Instale as dependências globais `npm install -g hexo-cli && npm install -g concurrently && npm install -g node-sass` caso ainda não tenha instalado
+ * Pronto! Agora é só dar um `npm start` e acessar o site em `localhost:3000` e o blog em `localhost:4000`
 
 ## Tem dificuldade com o Terminal ou git?
 
