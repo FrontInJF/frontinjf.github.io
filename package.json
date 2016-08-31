@@ -8,7 +8,6 @@
     "start:site": "concurrently \"node ./init-server.js\" \"npm run sass:watch\"",
     "dev:server:site": "node ./init-server.js",
     "dev:server:blog": "hexo server --cwd ./src/blog",
-    "build:site": "npm run build:css && npm run copy",
     "copy:CNAME": "cp ./src/site/CNAME ./dest",
     "copy:index.html": "cp ./src/site/index.html ./dest",
     "copy:browserconfig.xml": "cp ./src/site/browserconfig.xml ./dest",
@@ -19,9 +18,12 @@
     "clean": "rm -rf dest",
     "sass:compile": "node-sass ./src/site/scss/main.scss --output ./src/site/css/ --source-map ./src/site/css/main.css.map",
     "build:css": "node-sass ./src/site/scss/main.scss --output-style compressed --output ./dest/css/",
+    "build:site": "npm run build:css && npm run copy",
+    "build:blog": "hexo generate --cwd src/blog",
     "sass:watch": "npm run sass:compile -- --watch",
     "install-global-dependencies": "npm install browser-sync -g && npm install node-sass -g && npm install -g concurrently && npm install -g hexo-cli",
-    "install-all-dependencies": "npm run install-global-dependencies && cd core-blog && npm install"
+    "install-all-dependencies": "npm run install-global-dependencies && cd core-blog && npm install",
+    "postinstall": "cd src && cd blog && npm install && cd ../.."
   },
   "repository": {
     "type": "git",
