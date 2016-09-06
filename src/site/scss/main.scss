@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Roboto';
 $text-nav: #aeaaaa;
 $verde-cor: #00c853;
+$primary-color: $verde-cor;
 
 @mixin flexbox () {
   display: -webkit-box;
@@ -122,5 +122,35 @@ body{
     margin-right: 18px;
     vertical-align: middle;
     display: inline-block;
+  }
+}
+
+
+.primary-color{
+  &-fill{
+    fill: $primary-color;
+  }
+}
+.btn-custom{
+  left: -10px;
+  top: 15px;
+  position: relative;
+}
+.icon{
+  &-small{
+    height: 16px;
+    width: 16px;
+  }
+  &-medium{
+    height: 24px;
+    width: 24px;
+  }
+  &-large{
+    height: 32px;
+    width: 32px;
+  }
+  &-extra-large{
+    height: 48px;
+    width: 48px;
   }
 }
