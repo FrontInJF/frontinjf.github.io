@@ -1,28 +1,29 @@
 language: node_js
 node_js:
-  - '0.12'
+- '0.12'
 script:
-  - npm run build:site
-  - npm run build:blog
+- npm run build:site
+- npm run build:blog
 after_script:
-  - echo "Fazendo o build..."
-  - cd dest
-  - pwd && ls -al
-  - git init
-  - git add .
-  - git commit -m "Deployed to Github Pages"
-  - git push --force --quiet "https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git" master:master > /dev/null 2>&1
+- echo "Fazendo o build..."
+- cd dest
+- pwd && ls -al
+- git init
+- git add .
+- git commit -m "Deployed to Github Pages"
+- git push --force --quiet "https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git"
+  master:master > /dev/null 2>&1
 branches:
   only:
-    - develop
+  - develop
 before_script:
-  - npm install -g node-sass
-  - npm install -g hexo-cli
-  - npm install -g npm-run-all
-  - git config --global user.email "lesley.andrez@gmail.com"
-  - git config --global user.name "lesleyandrez"
-  - git remote rm origin
-  - git remote add origin https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git
+- npm install -g node-sass
+- npm install -g hexo-cli
+- npm install -g npm-run-all
+- git config --global user.email "lesley.andrez@gmail.com"
+- git config --global user.name "lesleyandrez"
+- git remote rm origin
+- git remote add origin https://lesleyandrez:${GITHUB_TOKEN}@github.com/FrontInJF/frontinjf.github.io.git
 env:
   global:
-  - secure: bO6LPfu0atBr/gxIkLrhWltwIi78hFyNYmn3v/OtlemAsqM+9sjx3COInescNqim7dqNFeeth7qV2Zn7DdVPZC4loxnTIBYEShh7LWx69Pbj38AuoVwXpB2KXLk612XkgyoZeT85+aNGI+pO6BxzNPGqi/ijb+ZIUo4zzv4jFEBWh4MoGB65uNvzO49p27kK1kNftlMdIAKKGtCShYsLPHSldscSEvPXcv76Xregx7C9LyC8IcmXF3lp9ZIEV7d6yOwugQfIiPzx7cdHAaX9shroSoUq4rlpzOBUAVVmcesHK1dpf0O67BxU62h7iy5FNwK0BnCD9VESoakoHUKgvFl41KEuYcWiNTjggWlpzAcOwcbRZUS1YI8PuVzzOw0hcxTb2P43x72bzJguy8hjDXnyvkft4XoeSiTe/OwZhrPOJYZoLNYTiGag+C/cD2jIzRT017KHhVFGxl2WAfywFii4ODXlfbxeKTRW34+POAYt8AWGAcexoAfkgBl8wEQWkZorJBJ3kY9/YEmoGVIPAXn2H/afcv1sOehv1/ABW6vd67Frt27JKTEjnvVqSAie+5Kk48MiXMU20GI9JMssPBUN4nySxPQhlZtPpgvIigJOcb282Jd5bhuTsbfED49dbPZ8B6kizRUxk8vQzEDRRl3dbm/GWIYC9/9rBO7hxeA=
+    secure: Bw3IFSZ2cADhxvTRYgBd7XD5x/IQ3+A7qiEzZKSLT9hSd6V8W3Wxv/HoSAeGYFGJ1jZsqPckfvNuNjYbTCZGg9+6vpN/jvYvF77sXfr8GB2yQ+SJWSozOVQfD8g5osKHrBef+uxq+IiqHVMKp+UsTSRHHA6EhrmZUmQfiaoDUabxwPXvi03NJEeDBoov+F1rIqKlP6dSiZlGQHOKkBfGa2WOkFzQNL6U806MNHwqADBysIM/vyrIlLYt/8VxWeMqLOXfV1zgNclE9WgFz4gFRYvZfmZrO2M1xt116oYoo9rZWO/QCiI+3JLeuboQa/Z/0wTnCyMQnb7eGrFX4DTPIPt+1yFfx3yfXzt7lqgoJMh9bXzl0PDxpAkLAl6DhYNAapdAibGRUTrerqiTMAYSjQ6knjRuzz8KVd3wXR7zgwYLi+qJdPZDbsU44ebGYIr6kH32Ee46PmUfeIu9pvrjZxLbQWYfpmKvCBlJaaPHlFsY8NHq29hWz0qA7wloDjDiURFWh7dHk7rp1WkQK2O2IFV4uKg+NHErqQiTp/LGaDQXw+aeFXIdTQFOpVYDqPAtRk2jhNB1IVsupiVAKgIADZ4meVVrrDQEtVjgHoZNhj98nJZzmvCPtyesSjrFz5RqxqYC7BXqC+jf/LxaVnymfblalgd0nvKNYX8qHWNbOzA=
